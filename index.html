@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OMEGA - Voice Companion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="container">
+        <div class="logo">Ω</div>
+
+        <h1>OMEGA</h1>
+        <p class="subtitle">Your Personal Memory Companion</p>
+
+        <div class="avatar">💚</div>
+
+        <h2 id="status">Ready to talk?</h2>
+
+        <p id="description">
+            Press the microphone button and let's have a conversation.
+        </p>
+
+        <button id="micButton" aria-label="Start voice conversation">
+            🎙️
+        </button>
+
+        <p class="hint">Tap to start or end your conversation</p>
+
+        <div id="conversation">
+            <p id="userText"></p>
+            <p id="aiText"></p>
+        </div>
+
+        <p id="errorMessage" role="alert"></p>
+    </main>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
+

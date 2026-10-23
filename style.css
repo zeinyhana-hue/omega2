@@ -1,0 +1,118 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f7f8f4;
+    color: #0f2c4c;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: min(90%, 480px);
+    padding: 35px 25px;
+    text-align: center;
+    background: white;
+    border-radius: 28px;
+    box-shadow: 0 10px 40px rgba(15, 44, 76, 0.08);
+}
+
+.logo {
+    font-size: 45px;
+    font-weight: bold;
+    color: #0e7c7b;
+}
+
+h1 {
+    margin: 5px 0;
+    letter-spacing: 5px;
+}
+
+.subtitle {
+    color: #5a6c7d;
+    font-size: 14px;
+}
+
+.avatar {
+    margin: 30px auto 15px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e5f4ef;
+    border-radius: 50%;
+    font-size: 45px;
+}
+
+h2 {
+    font-size: 21px;
+}
+
+#description {
+    color: #5a6c7d;
+    line-height: 1.7;
+}
+
+#micButton {
+    margin: 25px 0 10px;
+    width: 85px;
+    height: 85px;
+    border: none;
+    border-radius: 50%;
+    background: #0e7c7b;
+    color: white;
+    font-size: 34px;
+    cursor: pointer;
+    box-shadow: 0 5px 20px rgba(14, 124, 123, 0.25);
+    transition: transform 0.2s, background 0.2s;
+}
+
+#micButton:hover {
+    transform: scale(1.06);
+}
+
+#micButton.active {
+    background: #e57373;
+    animation: pulse 1.5s infinite;
+}
+
+.hint {
+    font-size: 12px;
+    color: #5a6c7d;
+}
+
+#conversation {
+    margin-top: 20px;
+    text-align: left;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+#userText,
+#aiText {
+    white-space: pre-wrap;
+}
+
+#errorMessage {
+    color: #c62828;
+    font-size: 13px;
+    overflow-wrap: anywhere;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 0 0 0 0 rgba(229, 115, 115, 0.35);
+    }
+
+    50% {
+        box-shadow: 0 0 0 12px rgba(229, 115, 115, 0);
+    }
+}
+
